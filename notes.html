@@ -8,7 +8,8 @@
 	<ul class="nav nav-tabs">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#Miscellaneous">Miscellaneous</a></li>
-  <li role="presentation"><a href="#THTML/CSS">HTML/CSS</a></li>
+  <li role="presentation"><a href="#Terminal">Terminal</a></li>
+  <li role="presentation"><a href="#HTML/CSS">HTML/CSS</a></li>
   <li role="presentation"><a href="#Javascript">Javascript</a></li>
   <li role="presentation"><a href="#JQuery">JQuery</a></li>
   <li role="presentation"><a href="#Ruby">Ruby</a></li>
@@ -16,35 +17,88 @@
   <li role="presentation"><a href="#Database">Database</a></li>
   </ul>
 
-<div class='Miscellaneous'>
+<div id='Miscellaneous'>
+	<h1> Miscellaneous</h3>
+		<hr>
+	<h3>Web Server?</h3>
+	<p>A web server can be either a software unit or a hardware unit. We will talk about both of these counterparts together. In layman’s terms, a web server is a place where you store the content of a website. When you type in www.differencebetween.com in your web browser, the address gets translated to the IP address of the server where the files of the DB are stored. This storage facility is in essence the web server and facilitates serving dynamic HTML content to any client who is requesting it.
+
+	With the recent developments, Web Server can serve dynamic content using server side scripting languages like PHP, ASP or JSP, as well. They serve a variety of clients including web browsers of the PCs, routers, printers, web cams etc. Another feature that can be seen in the web servers is the ability to acquire information from the clients using mechanisms such as forms or uploading. For instance, when you comment on this article, the web server acquires the content you used to comment and stores it.</p>
+	<h3>Web Browser?</h3>
+	<p>You are probably using a web browser to read this article right now. A web browser is basically software facilitating the retrieval of information from a web server. The information that is presented may be text, images, videos or any other content and sometimes third party plugins are used to display content inside web browsers. For instance, when you watch a video, a flash player plugin is generically needed to decode and present that information on your screen as a video.
+
+	A web browser uses a URI (Uniform Resource Identifier) to locate information source. They work in the Application layer of the CISCO OSI model. You may identify a web browser better if I spell out some popular browsers in use. Does Internet Explorer, Mozilla Firefox, Google Chrome or Opera sound familiar to you? I’m sure they do, and they are all web browsers. Thus, now you know the responsibilities of a web browser by experience.</p>
+	<h3> Recursion</h3>
+	<p>Recursion is an important programming technique, in which a function calls itself.</p>
+	<h3>Web widget</h3>
+	<p>In computing, a web widget is a software widget for the web. It's a small application with limited functionality that can be installed and executed within a web page by an end user</p>
+	<h3>REST</h3>
+	<p>representational state transfer (REST) - 
+ RESTful systems typically, but not always, communicate over Hypertext Transfer Protocol (HTTP) with the same HTTP verbs (GET, POST, PUT, DELETE, etc.)
+REST systems interface with external systems as web resources identified by Uniform Resource Identifiers (URIs), for example /people/tom, which can be operated upon using standard verbs such as DELETE /people/tom.
+RESTful applications use HTTP requests to post data (create and/or update), read data (e.g., make queries), and delete data. Thus, REST uses HTTP for all four CRUD (Create/Read/Update/Delete) operations.
+It relies on a stateless, client-server, cacheable communications protocol -- and in virtually all cases, the HTTP protocol is used.</p>
+</div>
+
+<div id='Terminal'>
+	<h1> Terminal </h1>
+	<hr>
+	<h3>Case insensitve command</h3>
+	<p>- how to make terminal commands case-insensitive:
+run this command in the command line (I don’t think it matters where):
+echo "set completion-ignore-case On" >> ~/.inputrc</p>
+	<h3>Sublime shortcut</h3>
+	<p>- how to create sublime command for opening documents:
+<br>
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+<br>
+then open your bash profile:
+open ~/.bash_profile
+<br>
+If you don't already have a PATH set in your bash_profile you can type:
+<br>
+export PATH=/usr/local/bin:$PATH
+<br>
+the run command:
+<br>
+source ~/.bash_profile
+<br>
+finally, run command:
+sublime filename</p>
+<h3>Amedning your last push</h3>
+<p>git add .
+	<br>
+git commit -amend
+<br>
+it fixes small amends on file/s
+<br>
+git push origin master -f
+<br>
+this pushes forcefully the amended changes </p>
 
 </div>
 
-<div class='Terminal'>
+<div id='HTML/CSS'>
 
 </div>
 
-<div class='HTML/CSS'>
+<div id='Javascript'>
 
 </div>
 
-<div class='Javascript'>
+<div id='JQuery'>
 
 </div>
 
-<div class='JQuery'>
+<div id='Ruby'>
 
 </div>
 
-<div class='Ruby'>
+<div id='Rails'>
 
 </div>
 
-<div class='Rails'>
-
-</div>
-
-<div class='Database'>
+<div id='Database'>
 
 </div>
 

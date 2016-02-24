@@ -4,21 +4,17 @@ Miscellaneous
 
 Web Server?
 
-A web server can be either a software unit or a hardware unit. We will talk about both of these counterparts together. In layman’s terms, a web server is a place where you store the content of a website. When you type in www.differencebetween.com in your web browser, the address gets translated to the IP address of the server where the files of the DB are stored. This storage facility is in essence the web server and facilitates serving dynamic HTML content to any client who is requesting it.
 
-With the recent developments, Web Server can serve dynamic content using server side scripting languages like PHP, ASP or JSP, as well. They serve a variety of clients including web browsers of the PCs, routers, printers, web cams etc. Another feature that can be seen in the web servers is the ability to acquire information from the clients using mechanisms such as forms or uploading. For instance, when you comment on this article, the web server acquires the content you used to comment and stores it.
 
 Web Browser?
 
-You’re probably using a web browser to read this article right now. A web browser is basically software facilitating the retrieval of information from a web server. The information that is presented may be text, images, videos or any other content and sometimes third party plugins are used to display content inside web browsers. For instance, when you watch a video, a flash player plugin is generically needed to decode and present that information on your screen as a video.
 
-A web browser uses a URI (Uniform Resource Identifier) to locate information source. They work in the Application layer of the CISCO OSI model. You may identify a web browser better if I spell out some popular browsers in use. Does Internet Explorer, Mozilla Firefox, Google Chrome or Opera sound familiar to you? I’m sure they do, and they are all web browsers. Thus, now you know the responsibilities of a web browser by experience.
 ///////////////////////////////////////////
 
-Recursion is an important programming technique, in which a function calls itself.
+
 /////////////////////////////////////////
 
-In computing, a web widget is a software widget for the web. It's a small application with limited functionality that can be installed and executed within a web page by an end user
+
 /////////////////////////////////////////
 
 representational state transfer (REST) - 
