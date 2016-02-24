@@ -1,0 +1,231 @@
+
+
+Miscellaneous
+
+Web Server?
+
+A web server can be either a software unit or a hardware unit. We will talk about both of these counterparts together. In layman’s terms, a web server is a place where you store the content of a website. When you type in www.differencebetween.com in your web browser, the address gets translated to the IP address of the server where the files of the DB are stored. This storage facility is in essence the web server and facilitates serving dynamic HTML content to any client who is requesting it.
+
+With the recent developments, Web Server can serve dynamic content using server side scripting languages like PHP, ASP or JSP, as well. They serve a variety of clients including web browsers of the PCs, routers, printers, web cams etc. Another feature that can be seen in the web servers is the ability to acquire information from the clients using mechanisms such as forms or uploading. For instance, when you comment on this article, the web server acquires the content you used to comment and stores it.
+
+Web Browser?
+
+You’re probably using a web browser to read this article right now. A web browser is basically software facilitating the retrieval of information from a web server. The information that is presented may be text, images, videos or any other content and sometimes third party plugins are used to display content inside web browsers. For instance, when you watch a video, a flash player plugin is generically needed to decode and present that information on your screen as a video.
+
+A web browser uses a URI (Uniform Resource Identifier) to locate information source. They work in the Application layer of the CISCO OSI model. You may identify a web browser better if I spell out some popular browsers in use. Does Internet Explorer, Mozilla Firefox, Google Chrome or Opera sound familiar to you? I’m sure they do, and they are all web browsers. Thus, now you know the responsibilities of a web browser by experience.
+///////////////////////////////////////////
+
+Recursion is an important programming technique, in which a function calls itself.
+/////////////////////////////////////////
+
+In computing, a web widget is a software widget for the web. It's a small application with limited functionality that can be installed and executed within a web page by an end user
+/////////////////////////////////////////
+
+representational state transfer (REST) - 
+ RESTful systems typically, but not always, communicate over Hypertext Transfer Protocol (HTTP) with the same HTTP verbs (GET, POST, PUT, DELETE, etc.)
+REST systems interface with external systems as web resources identified by Uniform Resource Identifiers (URIs), for example /people/tom, which can be operated upon using standard verbs such as DELETE /people/tom.
+/////////////////////////////////////////
+
+formula for 49 random numbers
+// x = 2, y = 10
+Math.floor(Math.random() * ((10-2)+1) + 2);
+
+//////////////////////////////////////////////////////////////////////////
+General internet/programming/computer
+
+REST - Representation state transfer - 
+RESTful applications use HTTP requests to post data (create and/or update), read data (e.g., make queries), and delete data. Thus, REST uses HTTP for all four CRUD (Create/Read/Update/Delete) operations.
+It relies on a stateless, client-server, cacheable communications protocol -- and in virtually all cases, the HTTP protocol is used.
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+TERMINAL
+
+- how to make terminal commands case-insensitive:
+run this command in the command line (I don’t think it matters where):
+echo "set completion-ignore-case On" >> ~/.inputrc
+
+//////////////////////////////////
+
+- how to create sublime command for opening documents:
+first copy this:
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/sublime
+then open your bash profile:
+open ~/.bash_profile
+If you don't already have a PATH set in your bash_profile you can type:
+export PATH=/usr/local/bin:$PATH
+the run command:
+source ~/.bash_profile
+finally, run command:
+sublime filename
+//////////////////////////////////
+
+- Create an alias for differentiating folders from files
+type on the terminal:
+alias ls=“ls -F”
+that’s all
+//////////////////////////////////////////////////////////////////////////
+git add .
+git commit —amend
+it fixes small amends on file/s
+git push origin master -f
+this pushes forcefully the amended changes 
+//////////////////////////////////////////////////////////////////////////
+
+
+RAILS
+
+link_to/redirect_to/render
+
+
+link_to is used in your view, and generates html code for a link
+Here is the syntax:
+<%= link_to("this is page 2", {:controller => 'post', :action => 'index' }) %>
+first is the name of the link then a hash with the controller (optional) and then the action
+
+<%= link_to "Google", "http://google.com" %>
+This will generate in your view the following html
+
+<a href="http://google.com">Google</a>
+redirect_to and render are used in your controller to reply to a request. redirect_to will simply redirect the request to a new URL, if in your controller you add
+
+redirect_to "http://google.com"
+anyone accessing your page will effectively be redirected to Google
+def hello_2
+  	redirect_to(:controller => 'post', :action => 'index' )
+  end
+you can state the controller; if you don’t by default Rails will look for action in the controller you are currently in; then you stipulate the specific action (index, new, show etc)
+
+render can be used in many ways, but it's mainly used to render your html views.
+So render does redirect a view whereas redirect_to sends a new get request and you don’t need a view folder to do it (big difference between the two methods)
+
+render "article/show"
+This will render the view "app/views/article/show.html.erb"
+//////////////////////////////////////////
+
+- params
+ Let's consider an example URL: http://www.example.com/?username=dhh&email=dhh@email.com. In this URL, params[:username] would equal "dhh" and params[:email] would equal "dhh@email.com".
+/////////////////////////////////////
+
+- naming of Models
+Models in Rails use a singular name, and their corresponding database tables use a plural name.
+
+/////////////////////////////////////
+this is command for running AJAX in Rails:
+bundle exec rake db:setup
+/////////////////////////////////////
+gem ERD - it gives you a diagram of the structure of the database relation in your project
+///////////////////////////////////
+rake db:reset
+///////////////////////////////////
+rake db:schema:dump
+this command creates the schema file in the db folder
+/////////////////////////////
+rake = comes from make ruby;
+rake -T - gives you all the rake commands 
+////////////////////////////
+Table column types:
+binary, boolean, date, date time, decimal, float, integer, string, text, time
+//////////////////////////
+index in database
+An index is used to speed up searching in the database. MySQL have some good documentation on the subject (which is relevant for other SQL servers as well):
+An index can be used to efficiently find all row matching some column in your query and then walk through only that subset of the table to find exact matches. If you don't have indexes on any column in the WHERE clause, the SQL server have to walk through the whole table and check every row to see if it matches, which may be a slow operation on big tables.
+
+The index can also be a UNIQUE index, which means that you cannot have duplicate values in that column, or a PRIMARY KEY which in some storage engines defines where in the database file the value is stored.
+
+In MySQL you can use EXPLAIN in front of your SELECT statement to see if your query will make use of any index. This is a good start for troubleshooting performance problems. Read more here:
+/////////////////////////
+order in Database
+Subject.where(:visible => true).order(‘position ASC’)
+it will list all items with visible true plus in ascending order.
+
+
+
+CSS
+
+ - transition: 3s;
+- logo:hover {
+	transform: rotate(-10deg);
+/////////////////////////////////////
+
+
+
+JQUERY
+
+- preventDefault() - it doesn’t update the page; keeps it with a current thing
+
+////////////////////////////////////////
+
+
+Ruby
+
+For loops:
+for i in 0..4
+puts “this is number #{i}”
+end
+
+Each loops:
+array = [1, 2, 3, 4]
+array.each do |item|
+puts item
+end
+
+
+While loops:
+x = 0
+while x < 5
+puts x
+x = x + 1
+end
+
+///////////////////////////////////
+Difference between Class and Object in Ruby
+
+A Ruby object has three components: a set of flags, some instance variables, and an associated class. A Ruby class is an object of class Class, which contains all the object things plus a list of methods and a reference to a superclass (which is itself another class). All method calls in Ruby nominate a receiver (which is by default self, the current object). Ruby finds the method to invoke by looking at the list of methods in the receiver's class. If it doesn't find the method there, it looks in the superclass, and then in the superclass's superclass, and so on. If the method cannot be found in the receiver's class or any of its ancestors, Ruby invokes the method method_missing on the original receiver.
+////////////////////////////////////
+attr_accessor:
+
+this is combined two methods of attr_reader and attr_writer
+class Person
+  attr_accessor :name
+end
+
+person = Person.new
+person.name = "Dennis"
+person.name # => "Dennis"
+———————————————
+class Person
+  attr_accessor :name
+
+  def greeting
+    "Hello #{@name}"
+  end
+end
+
+person = Person.new
+person.name = "Dennis"
+person.greeting # => "Hello Dennis"
+////////////////////////////////////////////////////////////
+
+Object Inheritance Example:
+
+class Animal   
+attr_accessor :legs 
+end
+class Dog < Animal   
+def woof     
+puts "WOOF"  
+ end 
+end
+my_dog = Dog.new 
+my_dog.legs = 4 my_dog.woof >"WOOF"
+///////////////////////////////////////////////
+
+
+
+
+
+
+
